@@ -1,0 +1,4 @@
+Comandos para correr el programa
+
+g++ -o breakout main.cpp -I/usr/include/SDL2 -D_REENTRANT -lSDL2
+./breakout
