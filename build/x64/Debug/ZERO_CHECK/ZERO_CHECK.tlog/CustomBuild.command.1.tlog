@@ -1,0 +1,10 @@
+^C:\USERS\ANDRE\ONEDRIVE\DOCUMENTOS\GITHUB\GAME_ENGINE_ARCHITECTURE\BUILD\CMAKEFILES\D1215601CA618A1DC464AC31E56F9130\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture -BC:/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/build/game.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
