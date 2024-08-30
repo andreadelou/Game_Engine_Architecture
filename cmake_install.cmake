@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
