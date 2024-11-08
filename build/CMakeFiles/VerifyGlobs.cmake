@@ -3,15 +3,15 @@
 cmake_policy(SET CMP0009 NEW)
 
 # SOURCE_FILES at CMakeLists.txt:11 (file)
-file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/mnt/c/Users/andre/Downloads/proyecto/proyecto/src/*.cpp")
+file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/src/*.cpp")
 set(OLD_GLOB
-  "/mnt/c/Users/andre/Downloads/proyecto/proyecto/src/Engine/Game.cpp"
-  "/mnt/c/Users/andre/Downloads/proyecto/proyecto/src/Engine/Graphics/Texture.cpp"
-  "/mnt/c/Users/andre/Downloads/proyecto/proyecto/src/Engine/Graphics/TextureManager.cpp"
-  "/mnt/c/Users/andre/Downloads/proyecto/proyecto/src/Engine/Scene.cpp"
-  "/mnt/c/Users/andre/Downloads/proyecto/proyecto/src/main.cpp"
+  "/mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/src/Engine/Game.cpp"
+  "/mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/src/Engine/Graphics/Texture.cpp"
+  "/mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/src/Engine/Graphics/TextureManager.cpp"
+  "/mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/src/Engine/Scene.cpp"
+  "/mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/src/main.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
-  file(TOUCH_NOCREATE "/mnt/c/Users/andre/Downloads/proyecto/proyecto/build/CMakeFiles/cmake.verify_globs")
+  file(TOUCH_NOCREATE "/mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/build/CMakeFiles/cmake.verify_globs")
 endif()

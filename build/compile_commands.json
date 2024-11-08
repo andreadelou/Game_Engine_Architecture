@@ -1,32 +1,32 @@
 [
 {
-  "directory": "/mnt/c/Users/andre/Downloads/proyecto/proyecto/build",
-  "command": "/usr/bin/c++  -I/mnt/c/Users/andre/Downloads/proyecto/proyecto/src -I/usr/include/SDL2 -I/mnt/c/Users/andre/Downloads/proyecto/proyecto/external  -pg -g -std=gnu++23 -o CMakeFiles/game.dir/src/Engine/Game.cpp.o -c /mnt/c/Users/andre/Downloads/proyecto/proyecto/src/Engine/Game.cpp",
-  "file": "/mnt/c/Users/andre/Downloads/proyecto/proyecto/src/Engine/Game.cpp",
+  "directory": "/mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/build",
+  "command": "/usr/bin/c++  -I/mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/src -I/usr/include/SDL2 -I/mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/external  -pg -g -std=gnu++23 -o CMakeFiles/game.dir/src/Engine/Game.cpp.o -c /mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/src/Engine/Game.cpp",
+  "file": "/mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/src/Engine/Game.cpp",
   "output": "CMakeFiles/game.dir/src/Engine/Game.cpp.o"
 },
 {
-  "directory": "/mnt/c/Users/andre/Downloads/proyecto/proyecto/build",
-  "command": "/usr/bin/c++  -I/mnt/c/Users/andre/Downloads/proyecto/proyecto/src -I/usr/include/SDL2 -I/mnt/c/Users/andre/Downloads/proyecto/proyecto/external  -pg -g -std=gnu++23 -o CMakeFiles/game.dir/src/Engine/Graphics/Texture.cpp.o -c /mnt/c/Users/andre/Downloads/proyecto/proyecto/src/Engine/Graphics/Texture.cpp",
-  "file": "/mnt/c/Users/andre/Downloads/proyecto/proyecto/src/Engine/Graphics/Texture.cpp",
+  "directory": "/mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/build",
+  "command": "/usr/bin/c++  -I/mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/src -I/usr/include/SDL2 -I/mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/external  -pg -g -std=gnu++23 -o CMakeFiles/game.dir/src/Engine/Graphics/Texture.cpp.o -c /mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/src/Engine/Graphics/Texture.cpp",
+  "file": "/mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/src/Engine/Graphics/Texture.cpp",
   "output": "CMakeFiles/game.dir/src/Engine/Graphics/Texture.cpp.o"
 },
 {
-  "directory": "/mnt/c/Users/andre/Downloads/proyecto/proyecto/build",
-  "command": "/usr/bin/c++  -I/mnt/c/Users/andre/Downloads/proyecto/proyecto/src -I/usr/include/SDL2 -I/mnt/c/Users/andre/Downloads/proyecto/proyecto/external  -pg -g -std=gnu++23 -o CMakeFiles/game.dir/src/Engine/Graphics/TextureManager.cpp.o -c /mnt/c/Users/andre/Downloads/proyecto/proyecto/src/Engine/Graphics/TextureManager.cpp",
-  "file": "/mnt/c/Users/andre/Downloads/proyecto/proyecto/src/Engine/Graphics/TextureManager.cpp",
+  "directory": "/mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/build",
+  "command": "/usr/bin/c++  -I/mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/src -I/usr/include/SDL2 -I/mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/external  -pg -g -std=gnu++23 -o CMakeFiles/game.dir/src/Engine/Graphics/TextureManager.cpp.o -c /mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/src/Engine/Graphics/TextureManager.cpp",
+  "file": "/mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/src/Engine/Graphics/TextureManager.cpp",
   "output": "CMakeFiles/game.dir/src/Engine/Graphics/TextureManager.cpp.o"
 },
 {
-  "directory": "/mnt/c/Users/andre/Downloads/proyecto/proyecto/build",
-  "command": "/usr/bin/c++  -I/mnt/c/Users/andre/Downloads/proyecto/proyecto/src -I/usr/include/SDL2 -I/mnt/c/Users/andre/Downloads/proyecto/proyecto/external  -pg -g -std=gnu++23 -o CMakeFiles/game.dir/src/Engine/Scene.cpp.o -c /mnt/c/Users/andre/Downloads/proyecto/proyecto/src/Engine/Scene.cpp",
-  "file": "/mnt/c/Users/andre/Downloads/proyecto/proyecto/src/Engine/Scene.cpp",
+  "directory": "/mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/build",
+  "command": "/usr/bin/c++  -I/mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/src -I/usr/include/SDL2 -I/mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/external  -pg -g -std=gnu++23 -o CMakeFiles/game.dir/src/Engine/Scene.cpp.o -c /mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/src/Engine/Scene.cpp",
+  "file": "/mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/src/Engine/Scene.cpp",
   "output": "CMakeFiles/game.dir/src/Engine/Scene.cpp.o"
 },
 {
-  "directory": "/mnt/c/Users/andre/Downloads/proyecto/proyecto/build",
-  "command": "/usr/bin/c++  -I/mnt/c/Users/andre/Downloads/proyecto/proyecto/src -I/usr/include/SDL2 -I/mnt/c/Users/andre/Downloads/proyecto/proyecto/external  -pg -g -std=gnu++23 -o CMakeFiles/game.dir/src/main.cpp.o -c /mnt/c/Users/andre/Downloads/proyecto/proyecto/src/main.cpp",
-  "file": "/mnt/c/Users/andre/Downloads/proyecto/proyecto/src/main.cpp",
+  "directory": "/mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/build",
+  "command": "/usr/bin/c++  -I/mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/src -I/usr/include/SDL2 -I/mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/external  -pg -g -std=gnu++23 -o CMakeFiles/game.dir/src/main.cpp.o -c /mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/src/main.cpp",
+  "file": "/mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/src/main.cpp",
   "output": "CMakeFiles/game.dir/src/main.cpp.o"
 }
 ]

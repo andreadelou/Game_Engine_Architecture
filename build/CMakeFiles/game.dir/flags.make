@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/mnt/c/Users/andre/Downloads/proyecto/proyecto/src -I/usr/include/SDL2 -I/mnt/c/Users/andre/Downloads/proyecto/proyecto/external
+CXX_INCLUDES = -I/mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/src -I/usr/include/SDL2 -I/mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/external
 
 CXX_FLAGS =  -pg -g -std=gnu++23
 

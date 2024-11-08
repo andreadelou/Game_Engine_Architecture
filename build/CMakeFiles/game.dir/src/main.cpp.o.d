@@ -1,8 +1,8 @@
 CMakeFiles/game.dir/src/main.cpp.o: \
- /mnt/c/Users/andre/Downloads/proyecto/proyecto/src/main.cpp \
+ /mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/src/main.cpp \
  /usr/include/stdc-predef.h \
- /mnt/c/Users/andre/Downloads/proyecto/proyecto/src/DemoGame/DemoGame.h \
- /mnt/c/Users/andre/Downloads/proyecto/proyecto/src/Engine/Game.h \
+ /mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/src/DemoGame/DemoGame.h \
+ /mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/src/Engine/Game.h \
  /usr/include/SDL2/SDL.h /usr/include/SDL2/SDL_main.h \
  /usr/include/SDL2/SDL_stdinc.h /usr/include/SDL2/SDL_config.h \
  /usr/include/x86_64-linux-gnu/SDL2/_real_SDL_config.h \
@@ -221,7 +221,7 @@ CMakeFiles/game.dir/src/main.cpp.o: \
  /usr/include/SDL2/SDL_shape.h /usr/include/SDL2/SDL_system.h \
  /usr/include/SDL2/SDL_timer.h /usr/include/SDL2/SDL_version.h \
  /usr/include/SDL2/SDL_locale.h /usr/include/SDL2/SDL_misc.h \
- /mnt/c/Users/andre/Downloads/proyecto/proyecto/src/Engine/Scene.h \
+ /mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/src/Engine/Scene.h \
  /usr/include/c++/11/string /usr/include/c++/11/bits/stringfwd.h \
  /usr/include/c++/11/bits/memoryfwd.h \
  /usr/include/c++/11/bits/char_traits.h \
@@ -275,7 +275,7 @@ CMakeFiles/game.dir/src/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/11/bits/charconv.h \
  /usr/include/c++/11/bits/basic_string.tcc \
- /mnt/c/Users/andre/Downloads/proyecto/proyecto/external/entt/entt.hpp \
+ /mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/external/entt/entt.hpp \
  /usr/include/c++/11/cassert /usr/include/assert.h \
  /usr/include/c++/11/cstddef /usr/include/c++/11/functional \
  /usr/include/c++/11/tuple /usr/include/c++/11/utility \
@@ -364,9 +364,9 @@ CMakeFiles/game.dir/src/main.cpp.o: \
  /usr/include/c++/11/bits/stl_multiset.h \
  /usr/include/c++/11/unordered_set \
  /usr/include/c++/11/bits/unordered_set.h \
- /mnt/c/Users/andre/Downloads/proyecto/proyecto/src/Engine/Entity.h \
- /mnt/c/Users/andre/Downloads/proyecto/proyecto/src/Engine/Components.h \
- /mnt/c/Users/andre/Downloads/proyecto/proyecto/src/Engine/Systems.h \
- /mnt/c/Users/andre/Downloads/proyecto/proyecto/src/Engine/Graphics/TextureManager.h \
- /mnt/c/Users/andre/Downloads/proyecto/proyecto/src/Engine/Graphics/Texture.h \
+ /mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/src/Engine/Entity.h \
+ /mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/src/Engine/Components.h \
+ /mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/src/Engine/Systems.h \
+ /mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/src/Engine/Graphics/TextureManager.h \
+ /mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/src/Engine/Graphics/Texture.h \
  /usr/include/SDL2/SDL_image.h /usr/include/SDL2/SDL.h
