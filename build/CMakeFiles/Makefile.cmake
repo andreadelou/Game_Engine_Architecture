@@ -7,7 +7,7 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/CMakeLists.txt"
+  "/mnt/c/Users/andre/Downloads/proyecto/proyecto/CMakeLists.txt"
   "CMakeFiles/3.29.0/CMakeCCompiler.cmake"
   "CMakeFiles/3.29.0/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.29.0/CMakeSystem.cmake"
@@ -27,6 +27,9 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/local/share/cmake-3.29/Modules/Compiler/GNU-C.cmake"
   "/usr/local/share/cmake-3.29/Modules/Compiler/GNU-CXX.cmake"
   "/usr/local/share/cmake-3.29/Modules/Compiler/GNU.cmake"
+  "/usr/local/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake"
+  "/usr/local/share/cmake-3.29/Modules/FindPackageMessage.cmake"
+  "/usr/local/share/cmake-3.29/Modules/FindPkgConfig.cmake"
   "/usr/local/share/cmake-3.29/Modules/Platform/Linux-GNU-C.cmake"
   "/usr/local/share/cmake-3.29/Modules/Platform/Linux-GNU-CXX.cmake"
   "/usr/local/share/cmake-3.29/Modules/Platform/Linux-GNU.cmake"

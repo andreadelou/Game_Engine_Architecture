@@ -1,8 +1,0 @@
-[
-{
-  "directory": "/mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture",
-  "command": "/usr/bin/c++  -I/usr/include/SDL2 -I/mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/external  -pg -g -std=gnu++23 -o CMakeFiles/game.dir/src/main.cpp.o -c /mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/src/main.cpp",
-  "file": "/mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/src/main.cpp",
-  "output": "CMakeFiles/game.dir/src/main.cpp.o"
-}
-]

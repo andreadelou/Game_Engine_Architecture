@@ -1,3 +1,0 @@
-/mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/CMakeFiles/game.dir
-/mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/CMakeFiles/edit_cache.dir
-/mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/CMakeFiles/rebuild_cache.dir

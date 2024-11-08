@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture
+CMAKE_SOURCE_DIR = /mnt/c/Users/andre/Downloads/proyecto/proyecto
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/build
+CMAKE_BINARY_DIR = /mnt/c/Users/andre/Downloads/proyecto/proyecto/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/game.dir/depend.make
@@ -69,31 +69,95 @@ include CMakeFiles/game.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/game.dir/flags.make
 
+CMakeFiles/game.dir/src/Engine/Game.cpp.o: CMakeFiles/game.dir/flags.make
+CMakeFiles/game.dir/src/Engine/Game.cpp.o: /mnt/c/Users/andre/Downloads/proyecto/proyecto/src/Engine/Game.cpp
+CMakeFiles/game.dir/src/Engine/Game.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/andre/Downloads/proyecto/proyecto/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/game.dir/src/Engine/Game.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/Engine/Game.cpp.o -MF CMakeFiles/game.dir/src/Engine/Game.cpp.o.d -o CMakeFiles/game.dir/src/Engine/Game.cpp.o -c /mnt/c/Users/andre/Downloads/proyecto/proyecto/src/Engine/Game.cpp
+
+CMakeFiles/game.dir/src/Engine/Game.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/game.dir/src/Engine/Game.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/andre/Downloads/proyecto/proyecto/src/Engine/Game.cpp > CMakeFiles/game.dir/src/Engine/Game.cpp.i
+
+CMakeFiles/game.dir/src/Engine/Game.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game.dir/src/Engine/Game.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/andre/Downloads/proyecto/proyecto/src/Engine/Game.cpp -o CMakeFiles/game.dir/src/Engine/Game.cpp.s
+
+CMakeFiles/game.dir/src/Engine/Graphics/Texture.cpp.o: CMakeFiles/game.dir/flags.make
+CMakeFiles/game.dir/src/Engine/Graphics/Texture.cpp.o: /mnt/c/Users/andre/Downloads/proyecto/proyecto/src/Engine/Graphics/Texture.cpp
+CMakeFiles/game.dir/src/Engine/Graphics/Texture.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/andre/Downloads/proyecto/proyecto/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/game.dir/src/Engine/Graphics/Texture.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/Engine/Graphics/Texture.cpp.o -MF CMakeFiles/game.dir/src/Engine/Graphics/Texture.cpp.o.d -o CMakeFiles/game.dir/src/Engine/Graphics/Texture.cpp.o -c /mnt/c/Users/andre/Downloads/proyecto/proyecto/src/Engine/Graphics/Texture.cpp
+
+CMakeFiles/game.dir/src/Engine/Graphics/Texture.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/game.dir/src/Engine/Graphics/Texture.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/andre/Downloads/proyecto/proyecto/src/Engine/Graphics/Texture.cpp > CMakeFiles/game.dir/src/Engine/Graphics/Texture.cpp.i
+
+CMakeFiles/game.dir/src/Engine/Graphics/Texture.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game.dir/src/Engine/Graphics/Texture.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/andre/Downloads/proyecto/proyecto/src/Engine/Graphics/Texture.cpp -o CMakeFiles/game.dir/src/Engine/Graphics/Texture.cpp.s
+
+CMakeFiles/game.dir/src/Engine/Graphics/TextureManager.cpp.o: CMakeFiles/game.dir/flags.make
+CMakeFiles/game.dir/src/Engine/Graphics/TextureManager.cpp.o: /mnt/c/Users/andre/Downloads/proyecto/proyecto/src/Engine/Graphics/TextureManager.cpp
+CMakeFiles/game.dir/src/Engine/Graphics/TextureManager.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/andre/Downloads/proyecto/proyecto/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/game.dir/src/Engine/Graphics/TextureManager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/Engine/Graphics/TextureManager.cpp.o -MF CMakeFiles/game.dir/src/Engine/Graphics/TextureManager.cpp.o.d -o CMakeFiles/game.dir/src/Engine/Graphics/TextureManager.cpp.o -c /mnt/c/Users/andre/Downloads/proyecto/proyecto/src/Engine/Graphics/TextureManager.cpp
+
+CMakeFiles/game.dir/src/Engine/Graphics/TextureManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/game.dir/src/Engine/Graphics/TextureManager.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/andre/Downloads/proyecto/proyecto/src/Engine/Graphics/TextureManager.cpp > CMakeFiles/game.dir/src/Engine/Graphics/TextureManager.cpp.i
+
+CMakeFiles/game.dir/src/Engine/Graphics/TextureManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game.dir/src/Engine/Graphics/TextureManager.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/andre/Downloads/proyecto/proyecto/src/Engine/Graphics/TextureManager.cpp -o CMakeFiles/game.dir/src/Engine/Graphics/TextureManager.cpp.s
+
+CMakeFiles/game.dir/src/Engine/Scene.cpp.o: CMakeFiles/game.dir/flags.make
+CMakeFiles/game.dir/src/Engine/Scene.cpp.o: /mnt/c/Users/andre/Downloads/proyecto/proyecto/src/Engine/Scene.cpp
+CMakeFiles/game.dir/src/Engine/Scene.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/andre/Downloads/proyecto/proyecto/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/game.dir/src/Engine/Scene.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/Engine/Scene.cpp.o -MF CMakeFiles/game.dir/src/Engine/Scene.cpp.o.d -o CMakeFiles/game.dir/src/Engine/Scene.cpp.o -c /mnt/c/Users/andre/Downloads/proyecto/proyecto/src/Engine/Scene.cpp
+
+CMakeFiles/game.dir/src/Engine/Scene.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/game.dir/src/Engine/Scene.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/andre/Downloads/proyecto/proyecto/src/Engine/Scene.cpp > CMakeFiles/game.dir/src/Engine/Scene.cpp.i
+
+CMakeFiles/game.dir/src/Engine/Scene.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game.dir/src/Engine/Scene.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/andre/Downloads/proyecto/proyecto/src/Engine/Scene.cpp -o CMakeFiles/game.dir/src/Engine/Scene.cpp.s
+
 CMakeFiles/game.dir/src/main.cpp.o: CMakeFiles/game.dir/flags.make
-CMakeFiles/game.dir/src/main.cpp.o: /mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/src/main.cpp
+CMakeFiles/game.dir/src/main.cpp.o: /mnt/c/Users/andre/Downloads/proyecto/proyecto/src/main.cpp
 CMakeFiles/game.dir/src/main.cpp.o: CMakeFiles/game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/game.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/main.cpp.o -MF CMakeFiles/game.dir/src/main.cpp.o.d -o CMakeFiles/game.dir/src/main.cpp.o -c /mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/andre/Downloads/proyecto/proyecto/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/game.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/game.dir/src/main.cpp.o -MF CMakeFiles/game.dir/src/main.cpp.o.d -o CMakeFiles/game.dir/src/main.cpp.o -c /mnt/c/Users/andre/Downloads/proyecto/proyecto/src/main.cpp
 
 CMakeFiles/game.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/game.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/src/main.cpp > CMakeFiles/game.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/andre/Downloads/proyecto/proyecto/src/main.cpp > CMakeFiles/game.dir/src/main.cpp.i
 
 CMakeFiles/game.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/game.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/src/main.cpp -o CMakeFiles/game.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/andre/Downloads/proyecto/proyecto/src/main.cpp -o CMakeFiles/game.dir/src/main.cpp.s
 
 # Object files for target game
 game_OBJECTS = \
+"CMakeFiles/game.dir/src/Engine/Game.cpp.o" \
+"CMakeFiles/game.dir/src/Engine/Graphics/Texture.cpp.o" \
+"CMakeFiles/game.dir/src/Engine/Graphics/TextureManager.cpp.o" \
+"CMakeFiles/game.dir/src/Engine/Scene.cpp.o" \
 "CMakeFiles/game.dir/src/main.cpp.o"
 
 # External object files for target game
 game_EXTERNAL_OBJECTS =
 
+game: CMakeFiles/game.dir/src/Engine/Game.cpp.o
+game: CMakeFiles/game.dir/src/Engine/Graphics/Texture.cpp.o
+game: CMakeFiles/game.dir/src/Engine/Graphics/TextureManager.cpp.o
+game: CMakeFiles/game.dir/src/Engine/Scene.cpp.o
 game: CMakeFiles/game.dir/src/main.cpp.o
 game: CMakeFiles/game.dir/build.make
 game: CMakeFiles/game.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable game"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/c/Users/andre/Downloads/proyecto/proyecto/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable game"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/game.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -105,6 +169,6 @@ CMakeFiles/game.dir/clean:
 .PHONY : CMakeFiles/game.dir/clean
 
 CMakeFiles/game.dir/depend:
-	cd /mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture /mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture /mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/build /mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/build /mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/build/CMakeFiles/game.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /mnt/c/Users/andre/Downloads/proyecto/proyecto/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/andre/Downloads/proyecto/proyecto /mnt/c/Users/andre/Downloads/proyecto/proyecto /mnt/c/Users/andre/Downloads/proyecto/proyecto/build /mnt/c/Users/andre/Downloads/proyecto/proyecto/build /mnt/c/Users/andre/Downloads/proyecto/proyecto/build/CMakeFiles/game.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/game.dir/depend
 

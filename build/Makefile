@@ -57,10 +57,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture
+CMAKE_SOURCE_DIR = /mnt/c/Users/andre/Downloads/proyecto/proyecto
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/build
+CMAKE_BINARY_DIR = /mnt/c/Users/andre/Downloads/proyecto/proyecto/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/build/CMakeFiles /mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/andre/Downloads/proyecto/proyecto/build/CMakeFiles /mnt/c/Users/andre/Downloads/proyecto/proyecto/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/andre/Downloads/proyecto/proyecto/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -113,7 +113,7 @@ preinstall/fast:
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -P /mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/build/CMakeFiles/VerifyGlobs.cmake
+	$(CMAKE_COMMAND) -P /mnt/c/Users/andre/Downloads/proyecto/proyecto/build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
@@ -129,6 +129,102 @@ game: cmake_check_build_system
 game/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/build
 .PHONY : game/fast
+
+src/Engine/Game.o: src/Engine/Game.cpp.o
+.PHONY : src/Engine/Game.o
+
+# target to build an object file
+src/Engine/Game.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/Engine/Game.cpp.o
+.PHONY : src/Engine/Game.cpp.o
+
+src/Engine/Game.i: src/Engine/Game.cpp.i
+.PHONY : src/Engine/Game.i
+
+# target to preprocess a source file
+src/Engine/Game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/Engine/Game.cpp.i
+.PHONY : src/Engine/Game.cpp.i
+
+src/Engine/Game.s: src/Engine/Game.cpp.s
+.PHONY : src/Engine/Game.s
+
+# target to generate assembly for a file
+src/Engine/Game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/Engine/Game.cpp.s
+.PHONY : src/Engine/Game.cpp.s
+
+src/Engine/Graphics/Texture.o: src/Engine/Graphics/Texture.cpp.o
+.PHONY : src/Engine/Graphics/Texture.o
+
+# target to build an object file
+src/Engine/Graphics/Texture.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/Engine/Graphics/Texture.cpp.o
+.PHONY : src/Engine/Graphics/Texture.cpp.o
+
+src/Engine/Graphics/Texture.i: src/Engine/Graphics/Texture.cpp.i
+.PHONY : src/Engine/Graphics/Texture.i
+
+# target to preprocess a source file
+src/Engine/Graphics/Texture.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/Engine/Graphics/Texture.cpp.i
+.PHONY : src/Engine/Graphics/Texture.cpp.i
+
+src/Engine/Graphics/Texture.s: src/Engine/Graphics/Texture.cpp.s
+.PHONY : src/Engine/Graphics/Texture.s
+
+# target to generate assembly for a file
+src/Engine/Graphics/Texture.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/Engine/Graphics/Texture.cpp.s
+.PHONY : src/Engine/Graphics/Texture.cpp.s
+
+src/Engine/Graphics/TextureManager.o: src/Engine/Graphics/TextureManager.cpp.o
+.PHONY : src/Engine/Graphics/TextureManager.o
+
+# target to build an object file
+src/Engine/Graphics/TextureManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/Engine/Graphics/TextureManager.cpp.o
+.PHONY : src/Engine/Graphics/TextureManager.cpp.o
+
+src/Engine/Graphics/TextureManager.i: src/Engine/Graphics/TextureManager.cpp.i
+.PHONY : src/Engine/Graphics/TextureManager.i
+
+# target to preprocess a source file
+src/Engine/Graphics/TextureManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/Engine/Graphics/TextureManager.cpp.i
+.PHONY : src/Engine/Graphics/TextureManager.cpp.i
+
+src/Engine/Graphics/TextureManager.s: src/Engine/Graphics/TextureManager.cpp.s
+.PHONY : src/Engine/Graphics/TextureManager.s
+
+# target to generate assembly for a file
+src/Engine/Graphics/TextureManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/Engine/Graphics/TextureManager.cpp.s
+.PHONY : src/Engine/Graphics/TextureManager.cpp.s
+
+src/Engine/Scene.o: src/Engine/Scene.cpp.o
+.PHONY : src/Engine/Scene.o
+
+# target to build an object file
+src/Engine/Scene.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/Engine/Scene.cpp.o
+.PHONY : src/Engine/Scene.cpp.o
+
+src/Engine/Scene.i: src/Engine/Scene.cpp.i
+.PHONY : src/Engine/Scene.i
+
+# target to preprocess a source file
+src/Engine/Scene.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/Engine/Scene.cpp.i
+.PHONY : src/Engine/Scene.cpp.i
+
+src/Engine/Scene.s: src/Engine/Scene.cpp.s
+.PHONY : src/Engine/Scene.s
+
+# target to generate assembly for a file
+src/Engine/Scene.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/Engine/Scene.cpp.s
+.PHONY : src/Engine/Scene.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -163,6 +259,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... game"
+	@echo "... src/Engine/Game.o"
+	@echo "... src/Engine/Game.i"
+	@echo "... src/Engine/Game.s"
+	@echo "... src/Engine/Graphics/Texture.o"
+	@echo "... src/Engine/Graphics/Texture.i"
+	@echo "... src/Engine/Graphics/Texture.s"
+	@echo "... src/Engine/Graphics/TextureManager.o"
+	@echo "... src/Engine/Graphics/TextureManager.i"
+	@echo "... src/Engine/Graphics/TextureManager.s"
+	@echo "... src/Engine/Scene.o"
+	@echo "... src/Engine/Scene.i"
+	@echo "... src/Engine/Scene.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
@@ -177,7 +285,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -P /mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/build/CMakeFiles/VerifyGlobs.cmake
+	$(CMAKE_COMMAND) -P /mnt/c/Users/andre/Downloads/proyecto/proyecto/build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
