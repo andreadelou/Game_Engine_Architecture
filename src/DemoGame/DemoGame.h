@@ -38,8 +38,8 @@ class SquareSpawnSetupSystem : public SetupSystem {
     Entity* square = scene->createEntity("SQUARE", 10, 10); 
     square->addComponent<PlayerComponent>();
     square->addComponent<VelocityComponent>(300);
-    square->addComponent<TextureComponent>("src/images/ballena.png");
-    square->addComponent<SpriteComponent>("src/images/ballena.png", 64, 64);
+    square->addComponent<TextureComponent>("src/images/idle.png");
+    square->addComponent<SpriteComponent>("src/images/idle.png", 64, 64, 1, 4, 1000);
   }
 };
 
@@ -173,6 +173,7 @@ class SpriteAnimationSystem : public UpdateSystem {
   }
 };
 
+
 class SpriteRenderSystem : public RenderSystem {
   void run(SDL_Renderer* renderer) {
     auto view = scene->r.view<PositionComponent, SpriteComponent>();
@@ -191,6 +192,7 @@ class SpriteRenderSystem : public RenderSystem {
     }
   }
 }; 
+
 
 class BackgroundSetupSystem : public SetupSystem {
 public:

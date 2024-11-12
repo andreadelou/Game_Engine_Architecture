@@ -1678,7 +1678,6 @@ CMakeFiles/game.dir/src/main.cpp.o: /mnt/c/Users/andre/OneDrive/Documentos/GitHu
   /usr/include/c++/11/bits/hashtable_policy.h \
   /usr/include/c++/11/bits/invoke.h \
   /usr/include/c++/11/bits/ios_base.h \
-  /usr/include/c++/11/bits/istream.tcc \
   /usr/include/c++/11/bits/iterator_concepts.h \
   /usr/include/c++/11/bits/list.tcc \
   /usr/include/c++/11/bits/locale_classes.h \
@@ -1775,8 +1774,6 @@ CMakeFiles/game.dir/src/main.cpp.o: /mnt/c/Users/andre/OneDrive/Documentos/GitHu
   /usr/include/c++/11/initializer_list \
   /usr/include/c++/11/ios \
   /usr/include/c++/11/iosfwd \
-  /usr/include/c++/11/iostream \
-  /usr/include/c++/11/istream \
   /usr/include/c++/11/iterator \
   /usr/include/c++/11/limits \
   /usr/include/c++/11/list \
@@ -2549,8 +2546,6 @@ CMakeFiles/game.dir/src/main.cpp.o: /mnt/c/Users/andre/OneDrive/Documentos/GitHu
 /usr/include/SDL2/SDL_locale.h:
 
 /usr/include/c++/11/bits/align.h:
-
-/usr/include/c++/11/iostream:
 
 /usr/include/SDL2/SDL_metal.h:
 
