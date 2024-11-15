@@ -1580,7 +1580,10 @@ CMakeFiles/game.dir/src/Engine/Scene.cpp.o: /mnt/c/Users/andre/OneDrive/Document
 
 CMakeFiles/game.dir/src/main.cpp.o: /mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/src/main.cpp \
   /mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/external/entt/entt.hpp \
+  /mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/src/DemoGame/Backgrounds.h \
   /mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/src/DemoGame/DemoGame.h \
+  /mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/src/DemoGame/Sprites.h \
+  /mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/src/DemoGame/Tilemap.h \
   /mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/src/Engine/Components.h \
   /mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/src/Engine/Entity.h \
   /mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/src/Engine/Game.h \
@@ -1678,6 +1681,7 @@ CMakeFiles/game.dir/src/main.cpp.o: /mnt/c/Users/andre/OneDrive/Documentos/GitHu
   /usr/include/c++/11/bits/hashtable_policy.h \
   /usr/include/c++/11/bits/invoke.h \
   /usr/include/c++/11/bits/ios_base.h \
+  /usr/include/c++/11/bits/istream.tcc \
   /usr/include/c++/11/bits/iterator_concepts.h \
   /usr/include/c++/11/bits/list.tcc \
   /usr/include/c++/11/bits/locale_classes.h \
@@ -1774,6 +1778,8 @@ CMakeFiles/game.dir/src/main.cpp.o: /mnt/c/Users/andre/OneDrive/Documentos/GitHu
   /usr/include/c++/11/initializer_list \
   /usr/include/c++/11/ios \
   /usr/include/c++/11/iosfwd \
+  /usr/include/c++/11/iostream \
+  /usr/include/c++/11/istream \
   /usr/include/c++/11/iterator \
   /usr/include/c++/11/limits \
   /usr/include/c++/11/list \
@@ -2033,6 +2039,8 @@ CMakeFiles/game.dir/src/main.cpp.o: /mnt/c/Users/andre/OneDrive/Documentos/GitHu
   /usr/lib/gcc/x86_64-linux-gnu/11/include/xtestintrin.h
 
 
+/mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/src/DemoGame/Sprites.h:
+
 /mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/src/Engine/Components.h:
 
 /mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/src/Engine/Scene.cpp:
@@ -2058,6 +2066,8 @@ CMakeFiles/game.dir/src/main.cpp.o: /mnt/c/Users/andre/OneDrive/Documentos/GitHu
 /usr/lib/gcc/x86_64-linux-gnu/11/include/uintrintrin.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/tsxldtrkintrin.h:
+
+/mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/src/DemoGame/Tilemap.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/tmmintrin.h:
 
@@ -2547,6 +2557,8 @@ CMakeFiles/game.dir/src/main.cpp.o: /mnt/c/Users/andre/OneDrive/Documentos/GitHu
 
 /usr/include/c++/11/bits/align.h:
 
+/usr/include/c++/11/iostream:
+
 /usr/include/SDL2/SDL_metal.h:
 
 /usr/include/c++/11/array:
@@ -2626,6 +2638,8 @@ CMakeFiles/game.dir/src/main.cpp.o: /mnt/c/Users/andre/OneDrive/Documentos/GitHu
 /usr/include/c++/11/bits/hashtable.h:
 
 /usr/include/c++/11/cmath:
+
+/mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/src/DemoGame/Backgrounds.h:
 
 /usr/include/c++/11/bits/basic_ios.tcc:
 
