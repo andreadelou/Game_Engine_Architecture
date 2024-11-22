@@ -1,7 +1,6 @@
 # Reflexion
 
-Los tilemaps estan basados en la lava que se encuentra debajo del oceano, por lo tanto se buscan hacer obstaculos con estos.
-El sistema de tilemaps permite construir de manera modular el entorno oceánico para la ballena, por lo tanto ayuda a generar su ambientacion.
-Para lograrlo el mapa del nivel se representa en el código como una matriz (un arreglo bidimensional). Cada número o valor en la matriz representa un tipo de tile específico en la imagen. Se itera a través de cada posición de la matriz para renderizar el tile correspondiente. Cada número en la matriz indica qué parte de la imagen del tilemap se debe mostrar.
+Los coliders en el juego ayudan en la historia al usuario a personas nuevas maneras de movimeinto a traves del oceano, ya que en el oceano se dan erupciones volcanicas de igual manera y a veces la lava caliente logra durar unos momentos aun en el oceano. Por lo tanto el jugador debera evitar que la ballena se queme con estos pedazos de lava caliente que comienzan a volver a su estado solido y obstruyen el paso de la ballena para seguir explorando el oceano.
 
-https://github.com/user-attachments/assets/aebbf10d-1d2e-47e7-9f43-53b1431d32a0
+https://github.com/user-attachments/assets/539ea91f-5d3f-4823-a7b1-176ad4c413f0
+
