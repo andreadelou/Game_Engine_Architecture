@@ -13,21 +13,10 @@ class BackgroundSetupSystem : public SetupSystem {
 public:
   void run() override {
     Entity* background = scene->createEntity("BACKGROUND");
-    const std::string& bgfile = "src/images/Ocean.png"; // Asegúrate de que esta ruta sea válida
+    const std::string& bgfile = "src/images/Ocean.png";
     background->addComponent<PositionComponent>(0, 0);
     background->addComponent<TextureComponent>(bgfile);
-    background->addComponent<SpriteComponent>(
-        bgfile,
-        400,  // Ancho del sprite
-        600,  // Alto del sprite
-        1,    // Número de filas en el sprite sheet
-        3,    // Número de columnas en el sprite sheet
-        500,  // Tiempo de animación en ms
-        0,    // Offset x inicial
-        0,    // Offset y inicial
-        0,    // Rotación
-        false // Si es animado
-    );
+    background->addComponent<SpriteComponent>(bgfile, 400, 600, 1, 3, 500);
     background->addComponent<BackgroundComponent>(bgfile);
   }
 };

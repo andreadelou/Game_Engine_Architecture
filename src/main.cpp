@@ -1,8 +1,8 @@
-#include "DemoGame/FlappyCat.h"
+#include "DemoGame/DemoGame.h"
 
 int main() {
-  MyGame game;
-  game.setup();
-  game.run();
+  DemoGame demo = DemoGame();
+  demo.setup();
+  demo.run();
   return 0;
 }

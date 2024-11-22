@@ -156,7 +156,6 @@ game: CMakeFiles/game.dir/src/Engine/Graphics/TextureManager.cpp.o
 game: CMakeFiles/game.dir/src/Engine/Scene.cpp.o
 game: CMakeFiles/game.dir/src/main.cpp.o
 game: CMakeFiles/game.dir/build.make
-game: /usr/lib/libbox2d.so
 game: CMakeFiles/game.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/c/Users/andre/OneDrive/Documentos/GitHub/Game_Engine_Architecture/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable game"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/game.dir/link.txt --verbose=$(VERBOSE)
