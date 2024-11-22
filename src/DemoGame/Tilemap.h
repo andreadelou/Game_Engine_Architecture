@@ -5,94 +5,82 @@
 #include "Engine/Systems.h"
 #include "Engine/Components.h"
 #include <iostream>
+#include <unordered_map>
 
-struct TilemapComponent {
-  std::string filename;
-  std::vector<std::vector<int>> map;
-  int tileSize;
-  int scale;
+// Enum para definir los tipos de tiles
+enum class TileType {
+  NONE,
+  WALL,
+  TRIGGER,
 };
 
+// Estructura que representa un Tile
+struct Tile {
+  int index;         // Índice en el mapa
+  int tilemapIndex;  // Índice en el tileset
+  TileType type;     // Tipo de tile
+};
+
+struct TileComponent {
+  Tile tile;
+};
+
+// Componente que almacena los datos de un tile
+struct TilemapComponent {
+  std::string filename;
+  std::vector<Tile> tiles;
+  int tileSize;
+  int scale;
+  int width;
+  int height;
+};
+
+// Sistema de configuración del tilemap
 class TilemapSetupSystem : public SetupSystem {
 public:
   void run() override {
-    std::vector<std::vector<int>> map = {
-      {0, 0, 1, 0, 0, 1, 0, 0, 0, 0},
-      {0, 0, 0, 0, 0, 1, 0, 0, 1, 0},
-      {0, 0, 0, 0, 0, 1, 0, 0, 1, 0},
-      {0, 0, 0, 0, 0, 1, 1, 0, 0, 0},
-      {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-      {0, 0, 0, 1, 0, 0, 0, 0, 0, 0},
-      {0, 0, 0, 0, 0, 1, 0, 0, 1, 0},
-      {0, 0, 0, 0, 1, 1, 0, 0, 1, 0},
-      {0, 1, 1, 0, 0, 0, 0, 0, 0, 0},
-      {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+    std::vector<int> initialMap = {
+      0, 0, 1, 0, 0, 1, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 1, 0, 0, 1, 0,
+      0, 0, 0, 0, 0, 1, 0, 0, 1, 0,
+      0, 0, 0, 0, 0, 1, 1, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 1, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 1, 0, 0, 1, 0,
+      0, 0, 0, 0, 1, 1, 0, 0, 1, 0,
+      0, 1, 1, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0
     };
 
     std::string filename = "src/images/lava.png";
+    int tileSize = 8;
+    int scale = 8;
+    int width = 10;
+    int height = 10;
+
+    std::vector<Tile> tiles;
+    for (int i = 0; i < initialMap.size(); i++) {
+      TileType type = TileType::NONE;
+      if (initialMap[i] == 1) {
+        type = TileType::WALL;
+      }
+      tiles.push_back(Tile{i, 0, type});
+    }
+
     Entity* tilemap = scene->createEntity("TILEMAP");
     tilemap->addComponent<TilemapComponent>(
       filename,
-      map,
-      7,
-      7
+      tiles,
+      tileSize,
+      scale,
+      width,
+      height
     );
     tilemap->addComponent<TextureComponent>(filename);
   }
 };
 
-class AutoTilingSetupSystem : public SetupSystem {
-private:
-  bool isTile(std::vector<std::vector<int>>& map, int x, int y) {
-    return x >= 0 && x < map[0].size() && y >= 0 && y < map.size() && map[y][x] == 1;
-  }
-
-public:
-  void run() override {
-    auto view = scene->r.view<TilemapComponent>();
-    for (auto e : view) {
-      auto& tmap = view.get<TilemapComponent>(e);
-      int tilemapHeight = tmap.map.size();
-      int tilemapWidth = tmap.map[0].size();
-      std::vector<std::vector<int>> map = tmap.map;
-
-      for (int y = 0; y < tilemapHeight; y++) {
-        for (int x = 0; x < tilemapWidth; x++) {
-          if (tmap.map[y][x] == 1) {
-            std::cout << "tmap.map[y][x]: " << tmap.map[y][x] << std::endl;
-            std::cout << "x: " << x << std::endl;
-            std::cout << "y: " << y << std::endl;
-            bool north = isTile(tmap.map, x, y - 1);
-            bool south = isTile(tmap.map, x, y + 1);
-            bool west = isTile(tmap.map, x - 1, y);
-            bool east = isTile(tmap.map, x + 1, y);
-
-            int mask = 0;
-            if (north) {
-              mask |= 1;
-            }
-            if (west) {
-              mask |= 2;
-            }
-            if (east) {
-              mask |= 4;
-            }
-            if (south) {
-              mask |= 8;
-            }
-            std::cout << "mask: " << mask << std::endl << std::endl;
-            map[y][x] = mask;
-
-          } else {
-            map[y][x] = -1;
-          }
-        }
-      }
-      tmap.map = map;
-    }
-  }
-};
-
+// Sistema para realizar autotiling avanzado
 class AdvancedAutoTilingSetupSystem : public SetupSystem {
 private:
   std::unordered_map<int, int> maskToTileIndex = {
@@ -105,9 +93,8 @@ private:
     {248, 42}, {250, 43}, {251, 44}, {254, 45}, {255, 46}, {0, 47}
   };
 
-
-  bool isTile(const std::vector<std::vector<int>>& map, int x, int y) {
-    return (x >= 0 && x < map[0].size() && y >= 0 && y < map.size() && map[y][x] == 1);
+  bool isTile(const std::vector<Tile>& map, int x, int y, int w, int h) {
+    return (x >= 0 && x < w && y >= 0 && y < h && map[y * w + x].type == TileType::WALL);
   }
 
 public:
@@ -116,69 +103,55 @@ public:
 
     for (auto entity : view) {
       auto& tilemap = view.get<TilemapComponent>(entity);
+      const int width = tilemap.width;
+      const int height = tilemap.height;
 
-      const size_t mapHeight = tilemap.map.size();
-      const size_t mapWidth = tilemap.map[0].size();
+      std::vector<Tile> newMap = tilemap.tiles;
 
-      std::vector<std::vector<int>> newMap = tilemap.map;
-
-      for (size_t y = 0; y < mapHeight; ++y) {
-        for (size_t x = 0; x < mapWidth; ++x) {
-          if (tilemap.map[y][x] == 1) {
+      for (int y = 0; y < height; y++) {
+        for (int x = 0; x < width; x++) {
+          if (tilemap.tiles[y * width + x].type == TileType::WALL) {
             int mask = 0;
 
-            bool north = isTile(tilemap.map, x, y-1);
-            bool south = isTile(tilemap.map, x, y+1);
-            bool west = isTile(tilemap.map, x-1, y);
-            bool east = isTile(tilemap.map, x+1, y);
+            if (isTile(tilemap.tiles, x, y - 1, width, height)) mask |= 2;
+            if (isTile(tilemap.tiles, x - 1, y, width, height)) mask |= 8;
+            if (isTile(tilemap.tiles, x + 1, y, width, height)) mask |= 16;
+            if (isTile(tilemap.tiles, x, y + 1, width, height)) mask |= 64;
 
-            // Cardinal directions
-            if (north) mask |= 2;
-            if (west) mask |= 8;
-            if (east) mask |= 16;
-            if (south) mask |= 64;
-
-            // Corners (with redundancy check)
-            if (north && west && isTile(tilemap.map, x-1, y-1)) mask |= 1;
-            if (north && east && isTile(tilemap.map, x+1, y-1)) mask |= 4;
-            if (south && west && isTile(tilemap.map, x-1, y+1)) mask |= 32;
-            if (south && east && isTile(tilemap.map, x+1, y+1)) mask |= 128;
-
-            // Map the mask to the tile index
             auto it = maskToTileIndex.find(mask);
             if (it != maskToTileIndex.end()) {
-              newMap[y][x] = it->second;
+              newMap[y * width + x].tilemapIndex = it->second;
             } else {
-              // If the mask doesn't have a mapping, use a default tile
-              newMap[y][x] = 47;  // Assuming 47 is your default tile
+              newMap[y * width + x].tilemapIndex = 47; // Default tile
             }
           } else {
-            newMap[y][x] = -1;  // Empty space
+            newMap[y * width + x].tilemapIndex = -1;
           }
         }
       }
 
-      tilemap.map = newMap;
+      tilemap.tiles = newMap;
     }
   }
 };
 
+// Sistema para renderizar el tilemap
 class TilemapRenderSystem : public RenderSystem {
   void run(SDL_Renderer* renderer) {
     auto view = scene->r.view<TilemapComponent, TextureComponent>();
     for (auto e : view) {
-      auto tmap = view.get<TilemapComponent>(e);
-      auto tex = view.get<TextureComponent>(e);
+      auto& tmap = view.get<TilemapComponent>(e);
+      auto& tex = view.get<TextureComponent>(e);
 
       Texture* texture = TextureManager::GetTexture(tex.filename);
 
       int tileSize = tmap.tileSize * tmap.scale;
-      int tilemapHeight = tmap.map.size();
-      int tilemapWidth = tmap.map[0].size();
+      int tilemapWidth = tmap.width;
+      int tilemapHeight = tmap.height;
 
       for (int y = 0; y < tilemapHeight; y++) {
         for (int x = 0; x < tilemapWidth; x++) {
-          int tileIndex = tmap.map[y][x];
+          int tileIndex = tmap.tiles[y * tilemapWidth + x].tilemapIndex;
 
           if (tileIndex >= 0) {
             int tileIndexX = tileIndex % 8;
@@ -204,4 +177,4 @@ class TilemapRenderSystem : public RenderSystem {
       }
     }
   }
-}; 
+};
