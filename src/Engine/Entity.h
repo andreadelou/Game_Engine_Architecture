@@ -9,17 +9,20 @@ public:
   Entity(entt::entity h, Scene* s)
     : handle(h), scene(s)
   {
-    
   }
 
   ~Entity() {
     scene->r.destroy(handle);
-    
   }
 
   template<typename T>
   void addComponent(auto&&... args) {
     scene->r.emplace<T>(handle, std::forward<decltype(args)>(args)...);
+  }
+
+  template<typename T>
+  auto& get(auto&&... args) {
+    return scene->r.get_or_emplace<T>(handle, std::forward<decltype(args)>(args)...);
   }
 
 private:

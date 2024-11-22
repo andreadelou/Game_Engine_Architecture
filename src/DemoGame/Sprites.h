@@ -4,11 +4,12 @@
 #include "Engine/Components.h"
 #include "Engine/Graphics/TextureManager.h"
 
-
+// Componente para manejar texturas
 struct TextureComponent {
   std::string filename;
 };
 
+// Componente para manejar sprites
 struct SpriteComponent {
   std::string filename;
   int width;
@@ -18,10 +19,11 @@ struct SpriteComponent {
   int animationDuration = 0;
   Uint32 lastUpdate = 0;
   int xIndex = 0;
-  int yIndex = 0; 
+  int yIndex = 0;
+  bool movesWithCamera = true; // Indicador de movimiento relativo a la cámara
 };
 
-
+// Sistema para cargar texturas
 class TextureSetupSystem : public SetupSystem {
   void run() {
     auto view = scene->r.view<TextureComponent>();
@@ -30,8 +32,9 @@ class TextureSetupSystem : public SetupSystem {
       TextureManager::LoadTexture(tex.filename, scene->renderer);
     }
   }
-}; 
+};
 
+// Sistema para manejar el movimiento de los sprites
 class SpriteMovementSystem : public UpdateSystem {
   void run(float dT) {
     auto view = scene->r.view<SpriteComponent, VelocityComponent>();
@@ -40,23 +43,25 @@ class SpriteMovementSystem : public UpdateSystem {
       auto& spr = view.get<SpriteComponent>(e);
       auto vel = view.get<VelocityComponent>(e);
 
+      // Actualizar el índice de animación según la dirección del movimiento
       if (vel.x == 0) {
         if (spr.yIndex == 1) {
           spr.yIndex = 0;
         } else if (spr.yIndex == 3) {
-          spr.yIndex = 1;
+          spr.yIndex = 2;
         }
       }
       if (vel.x < 0 || vel.y < 0) {
-        spr.yIndex = 1;
+        spr.yIndex = 3; // Movimiento hacia la izquierda o arriba
       }
       if (vel.x > 0 || vel.y > 0) {
-        spr.yIndex = 1;
+        spr.yIndex = 1; // Movimiento hacia la derecha o abajo
       }
-   }
+    }
   }
 };
 
+// Sistema para manejar animaciones de los sprites
 class SpriteAnimationSystem : public UpdateSystem {
   void run(float dT) override {
     auto view = scene->r.view<SpriteComponent>();
@@ -72,24 +77,26 @@ class SpriteAnimationSystem : public UpdateSystem {
         }
         float timeSinceLastUpdate = now - spr.lastUpdate;
 
-        int lastFrame = spr.animationFrames - 1;
-
-        int framesToUpdate = timeSinceLastUpdate / spr.animationDuration * spr.animationFrames; 
+        // Calcular cuántos cuadros deben actualizarse
+        int framesToUpdate = timeSinceLastUpdate / spr.animationDuration * spr.animationFrames;
 
         if (framesToUpdate > 0) {
           spr.xIndex += framesToUpdate;
-          spr.xIndex %= spr.animationFrames;
+          spr.xIndex %= spr.animationFrames; // Ciclar entre los cuadros de animación
           spr.lastUpdate = now;
         }
-
       }
     }
   }
 };
 
+// Sistema para renderizar sprites
 class SpriteRenderSystem : public RenderSystem {
   void run(SDL_Renderer* renderer) {
     auto view = scene->r.view<PositionComponent, SpriteComponent>();
+    auto& cameraPosition = scene->mainCamera->get<PositionComponent>();
+    auto& cameraComponent = scene->mainCamera->get<CameraComponent>();
+
     for (auto e : view) {
       auto pos = view.get<PositionComponent>(e);
       auto spr = view.get<SpriteComponent>(e);
@@ -101,7 +108,28 @@ class SpriteRenderSystem : public RenderSystem {
         spr.width,
         spr.height,
       };
-      texture->render(scene->renderer, pos.x, pos.y, spr.width * spr.scale, spr.height * spr.scale, &clip);
+
+      if (spr.movesWithCamera) {
+        // Renderizar relativo a la posición de la cámara
+        texture->render(
+          scene->renderer,
+          pos.x - cameraPosition.x,
+          pos.y - cameraPosition.y,
+          spr.width * spr.scale * cameraComponent.zoom,
+          spr.height * spr.scale * cameraComponent.zoom,
+          &clip
+        );
+      } else {
+        // Renderizar sin considerar la posición de la cámara
+        texture->render(
+          scene->renderer,
+          pos.x,
+          pos.y,
+          spr.width * spr.scale,
+          spr.height * spr.scale,
+          &clip
+        );
+      }
     }
   }
-}; 
+};
