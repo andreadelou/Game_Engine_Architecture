@@ -1,13 +1,17 @@
 #pragma once
 #include "Scene.h"
+#include "Game.h"
 #include <SDL2/SDL.h>
 
 class System {
 protected:
   Scene* scene;
+  Game* game;
+
 
 public:
   void setScene(Scene* s) { scene = s; };
+  void setGame(Game* g) { game = g; };
 };
 
 class SetupSystem : public System {

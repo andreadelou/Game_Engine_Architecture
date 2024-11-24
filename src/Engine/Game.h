@@ -1,5 +1,8 @@
+#pragma once
+
 #include <SDL2/SDL.h>
 #include "Scene.h"
+#include <external/fmod/fmodstudioapi20225linux/api/core/inc/fmod.hpp>
 
 
 class Game {
@@ -48,6 +51,7 @@ class Game {
     void addSetupSystem(Scene* scene, auto&&... args) {
         auto system = new T(std::forward<decltype(args)>(args)...);
         system->setScene(scene);
+        system->setGame(this);
         scene->setupSystems.push_back(system);
     }
 
@@ -55,6 +59,7 @@ class Game {
     void addEventSystem(Scene* scene, auto&&... args) {
         auto system = new T(std::forward<decltype(args)>(args)...);
         system->setScene(scene);
+        system->setGame(this);
         scene->eventSystems.push_back(system);
     }
 
@@ -62,13 +67,15 @@ class Game {
     void addUpdateSystem(Scene* scene, auto&&... args) {
         auto system = new T(std::forward<decltype(args)>(args)...);
         system->setScene(scene);
+        system->setGame(this);
         scene->updateSystems.push_back(system);
     }
 
     template<typename T>
     void addRenderSystem(Scene* scene, auto&&... args) {
         auto system = new T(std::forward<decltype(args)>(args)...);
-        system->setScene(scene);
+        system->setScene(scene);\
+        system->setGame(this);
         scene->renderSystems.push_back(system);
     }
 };

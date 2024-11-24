@@ -1,6 +1,8 @@
 # Prerequisites
 *.d
 
+external/fmod 
+
 # Compiled Object files
 *.slo
 *.lo

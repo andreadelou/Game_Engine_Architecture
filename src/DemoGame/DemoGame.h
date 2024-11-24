@@ -11,6 +11,8 @@
 #include "Backgrounds.h"
 #include "Player.h"
 #include "Colliders.h"
+#include "Sound.h"
+
 
 
 class SquareSpawnSetupSystem : public SetupSystem {
@@ -112,6 +114,8 @@ public:
     addRenderSystem<SpriteRenderSystem>(sampleScene);
     addRenderSystem<TilemapRenderSystem>(sampleScene);
     addRenderSystem<ColliderRenderSystem>(sampleScene);
+
+    addSetupSystem<BackgroundMusicSystem>(gameScene);
 
     setScene(sampleScene);
   }

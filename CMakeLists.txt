@@ -7,6 +7,8 @@ set(CMAKE_BUILD_TYPE Debug)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pg")
 set(CMAKE_CXX_FLAGS_DEBUG "-g")
+set(FMOD_INCLUDE_DIR "external/fmod")
+set(FMOD_LIBRARIES "external/fmod/fmodstudioapi20225linux/api/core/lib/arm/libfmod.so")
 
 file(GLOB_RECURSE SOURCE_FILES CONFIGURE_DEPENDS
     "${PROJECT_SOURCE_DIR}/src/*.cpp"
