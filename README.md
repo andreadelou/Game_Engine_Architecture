@@ -1,7 +1,6 @@
 # Reflexion
 
-Los tilemaps estan basados en la lava que se encuentra debajo del oceano, por lo tanto se buscan hacer obstaculos con estos.
-El sistema de tilemaps permite construir de manera modular el entorno oceánico para la ballena, por lo tanto ayuda a generar su ambientacion.
-Para lograrlo el mapa del nivel se representa en el código como una matriz (un arreglo bidimensional). Cada número o valor en la matriz representa un tipo de tile específico en la imagen. Se itera a través de cada posición de la matriz para renderizar el tile correspondiente. Cada número en la matriz indica qué parte de la imagen del tilemap se debe mostrar.
+Para este ejercicio, los estudiantes de computación habiamos hecho algunos anteriormente una colaboración con los de música que les podiamos pedir música para nuestros juegos. Entonces apra esta ocasión yo a mi compañero le pedi apra este juego una musica de jazz relajante. Para dar la sensacón de cuando las ballenas migran entre lugares, que es cuando a veces exploran nuevas áreas del oceano, para que fuera un poco más ambiente de relajación al usuario y no se estresara tanto si en algún caso no lograba una escapatoria fácil. Para esto se uso la biblioteca de FMOD (que en mi caso no pude utilizarla en su totalidad por problemas de accesos desde mi maquina virtual dentro de visual). Se crearon los cambios para poder en el archivo avisar que la música mientras el juego este activo se reproduzca en lop, además que se llaman las declaraciones en los eventos del sistema en el DemoGame.h
+Esto es para brindarle a un usuario una mejor experiencia inmersiva de estar dentro del oceano explorando neuvas áreas mientras busca maneras de abrirse camino entre las posibles neuvas formaciones tanto pro erupciones de volcanes bajo el mar o por movimeinto de fallas y cierras
 
-https://github.com/user-attachments/assets/aebbf10d-1d2e-47e7-9f43-53b1431d32a0
+https://github.com/user-attachments/assets/cccb6d51-23d5-481e-9123-ab101003dd19
